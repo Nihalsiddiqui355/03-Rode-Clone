@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Rode | | Clone</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '393px',
+                    md: '724px',
+                    lg: '1440px',
+                },
+                extend: {
+                    colors: {
+                        myred: '#EB4D4B',
+                        btn:'#AD9970',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        button:focus {
+     outline: 1px dotted;
+     outline: 5px auto -webkit-focus-ring-color;
+}
+    </style>
+</head>
+<body >
+
+    <div >
+
+        <!-- headder part -->
+
+        <div class="md:mx-[5rem] hidden md:flex md:justify-between">
+            <h1 class="text-black my-2"><i class="cursor-pointer md:mx-1 fa-solid fa-location-dot"></i> EN  <i class="fa-solid fa-caret-down md:mx-1 cursor-pointer"></i></h1>
+
+            <h1 class="text-black my-2"><i class="cursor-pointer fa-solid fa-user"></i></h1>
+        </div>
+        <hr>
+
+        <!-- NavBar Area -->
+        <nav class="sticky mx-[5rem] sm:justify-between flex md:justify-between my-5">
+
+            <div class="sm:flex md:hidden">
+               <h1> <i class="fa-solid fa-bars cursor-pointer"></i> </h1>
+                <h1 class="text-black mx-2"><i class="cursor-pointer  fa-solid fa-location-dot cursor-pointer"></i> EN  <i class="fa-solid fa-caret-down  cursor-pointer"></i></h1>
+            </div>
+
+            <div><img class="w-[5rem] cursor-pointer" src="./assets/rodelogo1.png" alt="LOGO"></div>
+
+            <div class="md:flex hidden" >
+                <h2 class="mx-4 cursor-pointer"> PRODUCTS</h2>
+                <h2 class="mx-4 cursor-pointer"> USER GUIDES</h2>
+                <h2 class="mx-4 cursor-pointer"> SOLUTIONS</h2>
+                <h2 class="mx-4 cursor-pointer"> APPAREL</h2>
+                <h2 class="mx-4 cursor-pointer"> SUPPORT</h2>
+            </div>
+
+            <div>
+                <img class="w-[1rem] cursor-pointer" src="./assets/search.png" alt="searchpng">
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+
+        <div class="grid md:grid-cols-2 sm:grid-cols-1">
+            <div class="">
+                <img class="" src="./assets/02Hero-1.jpg" alt="hero-L">
+            </div>
+        
+
+            <div class="md:bg-gradient-to-r from-zinc-800  to-black  via-black sm:bg-black sm:flex sm:flex-col md:justify-center items-center">
+                <img class="w-[25rem]" src="./assets/02Hero-2.svg" alt="hero-R">
+                <h1 class="text-white my-5 text-3xl">
+                    The Revolution Is Here
+                </h1>
+                <p class="text-white sm:mx-10 md:mx-[8rem] ">
+                    The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level
+                </p>
+           <div class="my-2">
+            <button class="text-white mx-3 text-[#AD9970]" > LEARN MORE 
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+            <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+
+            </button>
+           </div>
+
+        </div>
+
+    
+    </div>
+
+
+    <!-- Section three -->
+
+    <div  class="sm:bg-gradient-to-r from-[#C5C5C5]  to-[#B1B1B1]  via-[#C5C5C5]   grid md:grid-cols-2 sm:grid-cols-1">
+
+        <div class="sm:flex sm:flex-col md:justify-center items-center">
+            <img src="./assets/03Sec-2.svg" alt="03-L">
+            <h1 class="my-2 text-bold text-2xl">
+                Your Search For The Perfect Headphones Is Over
+            </h1>
+            <p class="mx-10 flex text-center w-[30rem]">
+                Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that inspires creativity.
+            </p>
+            <div class="my-4">
+                <button class="text-white mx-3 text-[#AD9970]" > LEARN MORE 
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+    
+                </button>
+            </div>
+        </div>
+
+
+        <div>
+            <img src="./assets/03Sec-1.jpg" alt="Sec-R">
+        </div>
+
+    </div>
+
+    <!-- section 4 -->
+
+    <div style="background-image:url('./assets/04Sec-1.jpg');
+    overflow-x: hidden;  background-position: center; background-repeat:no-repeat; width:100%;" class="h-[45rem] sm:flex sm:flex-col md:justify-center md:items-end md:w-auto sm:w-[60rem]">
+
+        <div class="hidden md:flex md:flex-col md:w-[40rem] "  >
+            <img class="sm:w-[20rem] my-3" src="./assets/04Sec-2.svg" alt="04Sec-2">
+            <h1 class="my3 text-3xl md:w-[30rem]">Studio-Quality Recording, Made Simple</h1>
+            <p class="md:w-[30rem] my-3">
+                The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.
+            </p>
+            <div class="my-4">
+                <button class="text-white mx-3 text-[#AD9970]" > LEARN MORE 
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+    
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md:w-[40rem] sm:mx-[5rem] md:hidden"  >
+        <img class="sm:w-[20rem] my-3" src="./assets/04Sec-2.svg" alt="04Sec-2">
+        <h1 class="my3 text-3xl md:w-[30rem]">Studio-Quality Recording, Made Simple</h1>
+        <p class="md:w-[30rem] my-3">
+            The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.
+        </p>
+        <div class="my-4">
+            <button class="text-white mx-3 text-[#AD9970]" > LEARN MORE 
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+            <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+
+            </button>
+        </div>
+    </div>
+
+    <!-- Section 04 -->
+    
+        <div style="background-image:url('./assets/05Sec-1.jpg'); background-repeat:no-repeat;" class=" ring-2  h-[40rem] md:justify-center  md:flex  md:items-center bg-center  sm:hidden   md:w-[100%]">
+
+             <div class="sm:mx-[10rem] flex-col">
+                 <img class="sm:w-[40rem] mr-[10rem]" src="./assets/05Sec-2.svg" alt="img">
+                 <h1 class="text-3xl text-white my-2">
+                 Broadcast-grade Dynamic Microphone
+                </h1>
+                <p class="text-center sm:w-[35rem] text-white/[0.5] my-2">
+                   Give your voice that rich, broadcast sound with the PodMic. Perfect for livestreaming, voice-over, podcasting and gameplay.
+                </p>
+                <div class="my-4">
+                    <button class="text-white mx-3 text-[#AD9970]" > LEARN MORE 
+                        <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 duration-500"></i>
+                    </button>
+                    <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+        
+                    </button>
+                </div>
+            </div> 
+            
+        </div> 
+
+        <div style="background-image:url('./assets/05Sec-1a.jpg'); background-repeat:no-repeat;" class="sm:flex md:hidden  my-3 sm:h-[45rem]">
+        </div>
+        
+            <div class="sm:mx-[2rem] md:hidden  sm:flex-col">
+                <img class="sm:w-[40rem] bg-slate-200 sm:mx-[2rem]" src="./assets/05Sec-2.svg" alt="img">
+                <h1 class="text-3xl text-black my-2">
+                Broadcast-grade Dynamic Microphone
+               </h1>
+               <p class="text-satrt sm:w-[rem] text-black my-2">
+                  Give your voice that rich, broadcast sound with the PodMic. Perfect for livestreaming, voice-over, podcasting and gameplay.
+               </p>
+               <div class="my-4">
+                   <button class="text-black mx-3 text-[#AD9970]" > LEARN MORE 
+                       <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 duration-500"></i>
+                   </button>
+                   <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+       
+                   </button>
+               </div>
+               </div>
+
+
+        <!-- Section five -->
+
+        <div style="background-image:url('./assets/06Sec-1a.jpg'); background-repeat:no-repeat; background-position: center;" class="sm:h-[40rem] hidden md:flex md:flex-col md:items-center ">
+            
+            <div class="flex md:flex-col w-[35rem] md:items-center m-3  z-10 h-[20rem] relative top-[10rem] left-[20rem]">
+                <img class="w-[25rem]" src="./assets/06Sec-2.svg" alt="Logoog">
+                <h1 class="text-white text-3xl my-2">Next Generation Wireless Audio</h1>
+                <p class="text-white w-[30rem] my-2">
+                    The Wireless GO II is the world’s most powerful and versatile wireless microphone. With an unparalleled feature set and ultra-compact form factor, this is next generation wireless audio for every creator.
+                </p>
+                <div class="my-4">
+                    <button class="text-black mx-3 text-[#AD9970]" > LEARN MORE 
+                        <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 duration-500"></i>
+                    </button>
+                    <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mobo -->
+        <div style="background-image:url('./assets/06Sec-1a.jpg'); background-repeat:no-repeat; background-position: center;" class="sm:h-[20rem] md:hidden bg-left overflow-x sm:flex">
+            
+           
+
+        </div>
+
+        <div class=" md:hidden sm:flexring-2 mx-2 h-[20rem]">
+            <img class="w-[25rem] bg-black" src="./assets/06Sec-2.svg" alt="Logoog">
+            <h1 class="text-black text-3xl my-2">Next Generation Wireless Audio</h1>
+            <p class="text-black w-[30rem] my-2">
+                The Wireless GO II is the world’s most powerful and versatile wireless microphone. With an unparalleled feature set and ultra-compact form factor, this is next generation wireless audio for every creator.
+            </p>
+            <div class="my-4">
+                <button class="text-black mx-3 text-[#AD9970]" > LEARN MORE 
+                    <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 duration-500"></i>
+                </button>
+                <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+                </button>
+            </div>
+        </div>
+
+        <!-- Section 08 -->
+
+        <div style="background-image:url('./assets/07Sec-1a.jpg'); background-repeat:no-repeat; background-position: center;" class="sm:h-[40rem] hidden md:flex md:flex-col md:items-center ">
+            
+            <div class="flex md:flex-col w-[35rem] md:items-center m-3  z-10 h-[20rem] relative top-[10rem] left-[-20rem]">
+                <img class="w-[25rem]" src="./assets/07Sec-2.svg" alt="Logoog">
+                <h1 class="text-white text-3xl my-2">Compact Sound, Incredibly Powerful</h1>
+                <p class="text-white w-[30rem] my-2">
+                    The NT-USB Mini brings pristine studio sound to a compact USB microphone, and with RØDE Connect unlocking more power, more features and more control, it’s the perfect recording solution for podcasters, gamers and streamers.
+                </p>
+                <div class="my-4">
+                    <button class="text-black mx-3 text-[#AD9970]" > LEARN MORE 
+                        <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 duration-500"></i>
+                    </button>
+                    <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="background-image:url('./assets/07Sec-1.jpg'); background-repeat:no-repeat; background-position: center;" class="sm:h-[20rem] md:hidden bg-left overflow-x sm:flex">
+        </div>
+        <div class=" md:hidden sm:flexring-2 mx-2 h-[20rem]">
+            <img class="w-[25rem] bg-black" src="./assets/07Sec-2.svg" alt="Logoog">
+            <h1 class="text-black text-3xl my-2">Compact Sound, Incredibly Powerful</h1>
+            <p class="text-black w-[30rem] my-2">
+                The NT-USB Mini brings pristine studio sound to a compact USB microphone, and with RØDE Connect unlocking more power, more features and more control, it’s the perfect recording solution for podcasters, gamers and streamers.
+            </p>
+            <div class="my-4">
+                <button class="text-black mx-3 text-[#AD9970]" > LEARN MORE 
+                    <i class="fa-solid fa-arrow-right-long group-hover:translate-x-2 duration-500"></i>
+                </button>
+                <button class="text-white mx-2 px-4 hover:outline hover:outline-[bg-[#AD9970]] bg-[#AD9970] p-2 rounded-full hover:bg-white hover:text-btn" > BUY NOW
+                </button>
+            </div>
+        </div>
+
+        <!-- Section 09 -->
+
+        <div class="my-10 text-zinc-600 sm:mx-[3rem] md:mx-[28rem]">
+            <h1 class="sm:text-3xl md:text-4xl ">Explore The RØDE Range</h1>
+        </div>
+
+
+
+
+
+        <!-- section10 -->
+
+        <div id="all" class="ring-2 md:mx-[5rem] sm:mx-1 sm:h-[30rem]">
+
+            <div class="md:mx-[12rem] sm:mx-[1rem] my-4"><img class="hover:bg-white z-[-1]  cursor-pointer md:h-[6rem] sm:h-[6rem] sm:w-[60rem]  md:w-[50rem]" src="./assets/08sec-1.png" alt="img"></div>
+            <div class="md:mx-[12rem] sm:mx-[1rem] my-4"><img class="hover:bg-white z-[-1]  cursor-pointer md:h-[6rem] sm:h-[6rem] sm:w-[60rem]  md:w-[50rem]" src="./assets/08Sec-2.jpg" alt="img"></div>
+            <div class="md:mx-[12rem] sm:mx-[1rem] my-4"><img class="hover:bg-white z-[-1]  cursor-pointer md:h-[6rem] sm:h-[6rem] sm:w-[60rem]  md:w-[50rem]" src="./assets/08sec-3.png" alt="img"></div>
+            <div class="md:mx-[12rem] sm:mx-[1rem] my-4"><img class="hover:bg-white z-[-1]  cursor-pointer md:h-[6rem] sm:h-[6rem] sm:w-[60rem]  md:w-[50rem]" src="./assets/08sec-4.png" alt="img"></div>
+            
+        </div>
+
+        <!-- section 11 -->
+
+        <div class="my-10 text-zinc-600 sm:mx-[3rem] md:mx-[28rem]">
+            <h1 class="sm:text-3xl md:text-4xl text-btn hover:text-[#AD9970] cursor-pointer ">Latest From The RØDE Blog</h1>
+        </div>
+
+        <!-- Section 12th -->
+
+        <div class="bg-[#F8F9FA] grid sm:grid-cols-1 md:grid-cols-2 gap-10 md:px-[5rem] md:py-[4rem]">
+            <div class="bg-[#fff] flex sm:flex-col text-center ">
+                <h1 class="text-2xl p-1">The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphones</h1>
+                <img src="./assets/09Sec-1.jpg" alt="img">
+                <p>We explore the difference between large- and small-diaphragm condenser microphones, and what each is best used for</p>
+                <button type="button" class="bg-btn hover:bg-white hover:text-btn text-[#fff] cursor-pointer hover:outline py-2 my-3 sm:mx-[10rem] md:mx-[14rem] px-3  rounded-full">LEARN MORE</button>
+            </div>
+            <div class="bg-[#fff] flex sm:flex-col text-center ">
+                <h1 class="text-2xl p-1">What is a Condenser Microphone and When to Use One</h1>
+                <img src="./assets/09Sec-2.jpg" alt="img">
+                <p>Learn more about the different types of condenser mics, how they work and the best applications for using them.</p>
+                <button type="button" class="bg-btn hover:bg-white hover:text-btn text-[#fff] cursor-pointer hover:outline py-2 mx-3 my-3 my-3 sm:mx-[10rem] md:mx-[14rem] px-3 rounded-full">LEARN MORE</button>
+            </div>
+            <div class="bg-[#fff] flex sm:flex-col text-center ">
+                <h1 class="text-2xl p-1" >Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now</h1>
+                <img src="./assets/10Sec-1.jpg" alt="img">
+                <p>Firmware version 1.0.7 includes key feature additions, such as custom routing for USB and Bluetooth outputs, and more.</p>
+                <button type="button" class="bg-btn hover:bg-white hover:text-btn text-[#fff] cursor-pointer hover:outline py-2 mx-3 my-3 my-3 sm:mx-[10rem] sm:mx-[10rem] md:mx-[14rem] px-3 rounded-full">LEARN MORE</button>
+            </div>
+            <div class="bg-[#fff] flex sm:flex-col text-center ">
+                <h1 class="text-2xl p-1" >The RØDECaster Pro II Is Shipping Now</h1>
+                <img src="./assets/10Sec-1.jpg" alt="img">
+                <p>The world’s most powerful all-in-one audio solution for content creators is now available worldwide.</p>
+                <button type="button" class="bg-btn hover:bg-white hover:text-btn text-[#fff] cursor-pointer hover:outline py-2 mx-3 px-3 my-3 sm:mx-[10rem] md:mx-[14rem] rounded-full">LEARN MORE</button>
+            </div>
+        </div>
+
+
+        <!-- FOOter part -->
+        <footer>
+        <div class="grid md:grid-cols-6 pt-10 md:mx-1 sm:mx-[4rem]">
+            <hr>
+            <div>
+                <img src="./assets/FOOTER logo.svg" alt="img_footer">
+            </div>
+            <div>
+                <h1 class="text-2xl text-bold" >Products</h1>
+                <h2 class="my-2 text-base">Microphones</h2>
+                <h2 class="my-2 text-base">Headphones</h2>
+                <h2 class="my-2 text-base">Interfaces and Mixers</h2>
+                <h2 class="my-2 text-base">Accessories</h2>
+                <h2 class="my-2 text-base">Software</h2>
+                <h2 class="my-2 text-base" >Apparel</h2>
+            </div>
+
+            <div>
+                <h1 class="text-2xl text-bold" >Support</h1>
+                <h2 class="my-2 text-base" >Contact RØDE</h2>
+                <h2 class="my-2 text-base" >Service Centre</h2>
+                <h2 class="my-2 text-base" >Warranty</h2>
+                <h2 class="my-2 text-base" >Where to Buy</h2>
+            </div>
+
+            <div>
+                <h1 class="text-2xl text-bold" >Company</h1>
+                <h2 class="my-2 text-base" >About RØDE</h2>
+                <h2 class="my-2 text-base" >News and Info</h2>
+                <h2 class="my-2 text-base" >Job Opportunities</h2>
+                <div>
+                    <h1 class="text-2xl text-bold" >Account</h1>
+                    <h2 class="my-2 text-base">Manage your Account</h2>
+                    <h2 class="my-2 text-base">Create Account</h2>
+                </div>
+            </div>
+
+            <div >
+                <h1  class="md:text-3xl sm:text-2xl text-bold" >Subscribe to our latest news and offers</h1>
+                <button type="button" class="bg-btn hover:bg-white hover:text-btn text-[#fff] cursor-pointer rounded-full px-4 py-3 hover:outline my-3" >LEARN MORE</button>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 sm:mx-[3rem] sm:my-[3rem] md:mx-[10rem]">
+
+            <div class="my-1" >
+                <h1>© 2022 RØDE All Rights Reserved.</h1>
+            </div>
+
+            <div class="my-1" >
+                <h1>Privacy <span>|</span> Terms & Conditions</h1>
+            </div>
+
+            <div class="my-1" >
+                <i class="fa-brands mx-3 text-btn cursor-pointer fa-facebook"></i>
+                <i class="fa-brands mx-3 text-btn cursor-pointer fa-twitter"></i>
+                <i class="fa-brands mx-3 text-btn cursor-pointer fa-instagram"></i>
+                <i class="fa-brands mx-3 text-btn cursor-pointer fa-youtube"></i>
+                <i class="fa-brands mx-3 text-btn cursor-pointer fa-tiktok"></i>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    </div>
+
+ 
+
+    
+    
+</body>
+</html>
